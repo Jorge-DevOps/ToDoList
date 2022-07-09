@@ -1,9 +1,10 @@
-import React from 'react';
-import { TodoCounter } from '../components/todoCounter/TodoCounter';
-import { TodoSearch } from '../components/todoSearch/TodoSearch';
-import { TodoList } from '../components/todoList/TodoList';
-import { TodoItem } from '../components/todoItem/TodoItem';
-import { CreateTodoButton } from '../components/createTodoButton/CreateTodoButton';
+import React from "react";
+import { TodoCounter } from "../components/todoCounter/TodoCounter";
+import { TodoSearch } from "../components/todoSearch/TodoSearch";
+import { TodoList } from "../components/todoList/TodoList";
+import { TodoItem } from "../components/todoItem/TodoItem";
+import { CreateTodoButton } from "../components/createTodoButton/CreateTodoButton";
+
 
 function AppUI({
   totalTodos,
@@ -16,17 +17,10 @@ function AppUI({
 }) {
   return (
     <React.Fragment>
-      <TodoCounter
-        total={totalTodos}
-        completed={completedTodos}
-      />
-      <TodoSearch
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}
-      />
-
+      <TodoCounter total={totalTodos} completed={completedTodos} />
+      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
       <TodoList>
-        {searchedTodos.map(todo => (
+        {searchedTodos.map((todo) => (
           <TodoItem
             key={todo.text}
             text={todo.text}
@@ -36,10 +30,8 @@ function AppUI({
           />
         ))}
       </TodoList>
-
       <CreateTodoButton />
     </React.Fragment>
   );
 }
-
 export { AppUI };
