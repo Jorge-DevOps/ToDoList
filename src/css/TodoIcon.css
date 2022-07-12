@@ -1,0 +1,25 @@
+.Icon-container {
+    width: 2rem;
+    height: auto;
+}
+
+.Icon-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.Icon-svg--Check:hover{
+    fill: greenyellow;
+}
+
+
+.Icon-svg--Edit {
+    width: 1.6rem;
+}
+.Icon-svg--Edit:hover{
+    fill: #BFDDD3;
+}
+.Icon-svg--Delete {
+    width: 1.6rem;
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,14 @@
+.ModalBackground {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: #00000042;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+div#modal p {
+    color: white;
+}
